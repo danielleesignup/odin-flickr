@@ -33,3 +33,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore the .env file
+.env
+
+# Ignore the log directory
+log/
