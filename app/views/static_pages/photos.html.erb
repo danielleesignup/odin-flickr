@@ -1,0 +1,13 @@
+<!-- app/views/static_pages/photos.html.erb -->
+<h1>Photos from Flickr User <%= params[:user_id] %></h1>
+<% if @photos.present? %>
+  <ul>
+    <% @photos.each do |photo| %>
+      <li>
+        <img src="<%= photo['media']['m'] %>" alt="<%= photo['title'] %>" />
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No photos found for this user.</p>
+<% end %>

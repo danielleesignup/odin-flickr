@@ -1,0 +1,6 @@
+<!-- app/views/static_pages/home.html.erb -->
+<h1>Enter Flickr User ID</h1>
+<%= form_with url: flickr_photos_path, method: :get, id: 'form', data: { turbo: false } do |form| %>
+  <%= form.text_field :user_id, placeholder: "Enter Flickr User ID" %>
+  <%= form.submit "Show Photos" %>
+<% end %>
