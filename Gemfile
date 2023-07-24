@@ -44,6 +44,9 @@ gem "bootsnap", require: false
 
 gem 'rest-client'
 
+# Gemfile
+  gem 'flickr', '~> 2.0', '>= 2.0.2'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -65,6 +68,8 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   gem 'rest-client'
+  # Gemfile
+  gem 'flickr', '~> 2.0', '>= 2.0.2'
 end
 
 group :test do
@@ -74,4 +79,7 @@ group :test do
   gem "webdrivers"
   gem 'dotenv-rails'
   gem 'rest-client'
+  # Gemfile
+  gem 'flickr', '~> 2.0', '>= 2.0.2'
+
 end

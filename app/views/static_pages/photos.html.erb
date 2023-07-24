@@ -4,7 +4,7 @@
   <ul>
     <% @photos.each do |photo| %>
       <li>
-        <img src="<%= photo['media']['m'] %>" alt="<%= photo['title'] %>" />
+        <img src="<%= photo[:media][:m] %>" alt="<%= photo[:title] %>" />
       </li>
     <% end %>
   </ul>
